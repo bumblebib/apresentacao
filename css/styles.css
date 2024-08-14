@@ -1,0 +1,353 @@
+:root {
+    --primary-color: #d7d7d7;
+    --secondary-color: #0A1028;
+    --accent-color: #cc33cc;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    position: fixed;
+    top: 40%;
+    left: 92%;
+}
+
+nav a {
+    cursor: default;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    text-decoration: none;
+    opacity: 0.5;
+    animation: fadeIn 1s;
+    margin: 0;
+}
+
+nav li {
+    font-size: 2rem;
+}
+
+.dark{
+    cursor: default;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    text-decoration: none;
+    opacity: 0.5;
+    animation: fadeIn 1s;
+    margin: 0;
+}
+
+.focus{
+    opacity: 100%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.7%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section {
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+section:nth-child(even){
+    background-color: var(--secondary-color);
+}
+
+#home{
+    background-image: url('../img/bg.png');
+}
+
+#home .container{
+    display: flex;
+    height: 100vh;
+    width: 90%;
+}
+
+#home .container img{
+    width: 55%;
+    align-self: flex-end;
+}
+
+#home .box{
+    position: absolute;
+    width: 50%;
+    left: 42%;
+    top: 20%;
+    text-align: center;
+}
+
+#home .content h1{
+    margin-bottom: 0;
+    font-size: 3.5rem;
+    color: var(--accent-color);
+}
+
+#home .content p{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+} 
+
+#home .bar{
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    left: 50%;
+    top: 55%;
+    border-radius: 10px;
+}
+
+#home .bar .progress{
+    width: 30%;
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    animation: progress 2s;
+    position: relative;
+}
+
+.p-status{
+    padding: 0;
+    margin: 2% 0 0 0;
+    display: block;
+    color: var(--primary-color);
+    font-weight: 700;
+    top: 60%;
+    left: 63%;
+} 
+
+
+
+@keyframes progress {
+    0% {
+        color: transparent;
+        width: 0%;
+    }
+    50%{
+        color: rgb(215, 215, 215, 0.05);
+    }
+    75%{
+       color: rgb(215, 215, 215, 0.5);
+    }
+    100%{
+        color: var(--primary-color);
+    }
+}
+
+#curiosidades {
+    background-image: url('../img/bg2.png');
+    height: 99vh;
+    padding: 0;
+    margin: 0;
+}
+
+#curiosidades .box{
+    height: 95%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#curiosidades h1{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 200;
+}
+
+#curiosidades .container{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#curiosidades div{
+    text-align: justify;
+    width: 85%;
+    margin: 0 auto;
+}
+
+span{
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+#curiosidades li::marker{
+    color: var(--accent-color);
+    margin: 0;
+}
+
+#curiosidades img{
+    position: absolute;
+    top: 155%;
+    right: 10%;
+    width: 15%
+}
+
+#projetos {
+    background-image: url('../img/bg.png');
+}
+
+#projetos .container{
+    height: 40vh;
+    background-color: var(--primary-color);
+    background-image: url('../img/bg2.png');
+}
+
+#projetos .container h2{
+    font-weight: 200;
+    color: var(--accent-color);
+    display: block;
+    padding: 2%;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#projetos .content{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#projetos .content div{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.imagens{
+    display: flex;
+    width: 90%;
+    margin: 5% auto 0;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.imagens .box{
+    width: 50%;
+}
+
+.imagens div p{
+    display: block;
+}
+
+.imagens .img{
+    border: 1px solid var(--primary-color);
+    width: 50%;
+    margin: 0 auto;
+    height: 154px;
+    background-size: cover;
+}
+
+#habilidades {
+    background-color: var(--secondary-color);
+    background-image: url('../img/bg.png');
+    margin-top: -20px;
+    text-align: center;
+}
+
+#habilidades .container{
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#habilidades .content{
+    width: 80%;
+    height: 20%;
+}
+
+#habilidades .bar{
+    width: 70%;
+    background-color: var(--primary-color);
+    height: 50px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+#habilidades .progress{
+    display: flex;
+    border-radius: 30px;
+    width: 80%;
+    background: var(--accent-color);
+    height: 100%;
+    justify-content: center;
+    font-size: 1.2rem;
+    align-items: center;
+    letter-spacing: 5px;
+    color: var(--primary-color);
+    animation: progress 2s;
+}
+
+#habilidades .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+#habilidades .img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+#habilidades .box a{
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+#habilidades .box a:hover{
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+#habilidades .box:nth-child(even) .img{
+    background-image: url('../img/github-142-svgrepo-com.svg');
+    background-size: cover;
+}
+
+#habilidades .box:nth-child(odd) .img{
+    background-image: url('../img/linkedin-rounded-svgrepo-com.svg');
+    background-size: cover;
+}
+
+#habilidades .container:nth-child(2){
+    height: 80px;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-evenly;
+}

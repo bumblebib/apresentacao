@@ -1,0 +1,95 @@
+#curiosidades i{
+    color: transparent !important;
+    position: relative;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+#curiosidades i:nth-child(1){
+    font-size: 1.8rem;
+    text-shadow: 0 0 3px var(--accent-color);
+    left: 90%;
+    top: 20%;
+    animation-duration: 2.1s;
+}
+
+#curiosidades i:nth-child(2){
+    font-size: 2rem;
+    text-shadow: 0 0 3px var(--secondary-color);
+    left: 3%;
+    top: 80%;
+    animation-duration: 1.5s;
+}
+
+#curiosidades i:nth-child(3){
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px var(--accent-color);
+    left: 5%;
+    top: 5%;
+    animation-duration: 2.3s
+}
+
+#curiosidades i:nth-child(4){
+    font-size: 1.8rem;
+    text-shadow: 0 0 3px var(--secondary-color);
+    left: 60%;
+    top: 80%;
+    animation-duration: 2s;
+}
+
+#curiosidades i:nth-child(5){
+    font-size: 2.9rem;
+    text-shadow: 0 0 3px var(--secondary-color);
+    right: 10%;
+    top: 15%;
+    animation-duration: 1.8s;
+}
+
+#curiosidades i:nth-child(6){
+    font-size: 2.5rem;
+    text-shadow: 0 0 3px var(--accent-color);
+    right: 5%;
+    top: 70%;
+    animation-duration: 2.2s;
+}
+
+#curiosidades i:nth-child(7){
+    font-size: 2.2rem;
+    text-shadow: 0 0 3px var(--secondary-color);
+    left: 50%;
+    top: 5%;
+    animation-duration: 1.7s;
+}
+
+#curiosidades i:nth-child(8){
+    font-size: 2.1rem;
+    text-shadow: 0 0 3px var(--accent-color);
+    left: 55%;
+    top: 5%;
+    animation-duration: 2.5s;
+}
+
+#curiosidades i:nth-child(9){
+    font-size: 2.3rem;
+    text-shadow: 0 0 3px var(--secondary-color);
+    right: 35%;
+    top: 5%;
+    animation-duration: 2s;
+}
+
+#curiosidades i:nth-child(10){
+    font-size: 2.4rem;
+    text-shadow: 0 0 3px var(--accent-color);
+    right: 30%;
+    top: 60%;
+    animation-duration: 2.3s;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
