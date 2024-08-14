@@ -271,6 +271,7 @@ span{
     background-image: url('../img/bg.png');
     margin-top: -20px;
     text-align: center;
+    padding: 5%;
 }
 
 #habilidades .container{
